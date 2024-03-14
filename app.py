@@ -21,14 +21,13 @@ with ui.sidebar(open="open"):
     ui.input_selectize(
         "selected_attribute",
         "Select Plotly Attribute",
-        ["bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_mass_g"],
-    )
+        ["bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_mass_g"],)
 
     # Creates a numeric input for the number of Plotly histogram bins
-    ui.input_numeric("plotly_bin_count", "plotly bin count", 50)
+    ui.input_numeric("plotly_bin_count", "Plotly Bin Count", 50)
     
     # Creates a slider input for the number of Seaborn bins
-    ui.input_slider("seaborn_bin_count", "seaborn bin count", 1, 100, 20)
+    ui.input_slider("seaborn_bin_count", "Seaborn Bin Count", 1, 200, 100)
     
     # Creates a checkbox group input
     ui.input_checkbox_group(
@@ -36,8 +35,7 @@ with ui.sidebar(open="open"):
         "Species",
         ["Adelie", "Gentoo", "Chinstrap"],
         selected=["Adelie"],
-        inline=True,
-    )
+        inline=True,)
 
       # Adds a horizontal rule to the sidebar
     ui.hr()
@@ -114,6 +112,4 @@ with ui.card(full_screen=True):
                 "bill_length_mm": "Bill Length (mm)",
                 "body_mass_g": "Body Mass (g)",
             },
-            size_max=10, 
-        )
-
+            size_max=10,)
