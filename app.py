@@ -45,7 +45,7 @@ with ui.sidebar(open="open"):
     # Adds a hyperlink to GitHub Repo
     ui.a(
         "GitHub",
-         href="https://alvaroquintero28.github.io/cintel-02-data/",
+         href="https://github.com/alvaroquintero28/cintel-02-data/blob/main/app.py",
          target="_blank",
          )
 
